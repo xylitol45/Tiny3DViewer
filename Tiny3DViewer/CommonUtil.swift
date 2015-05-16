@@ -32,7 +32,6 @@ class CommonUtil {
     }
     
     class func font(size:CGFloat)->UIFont {
-//        return "HelveticaNeue-UltraLight"
         return UIFont.boldSystemFontOfSize(size)
     }
     
