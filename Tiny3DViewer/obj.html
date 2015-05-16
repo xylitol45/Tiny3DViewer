@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>example 1</title>
+        
+        <style type="text/css">
+            
+            body {
+                background-color: #000;
+            }
+        
+            </style>
+        <script src="three.js" type="text/javascript"></script>
+        <script src="OBJLoader.js" type="text/javascript"></script>
+        <script>
+            var width = {{width}};
+            var height ={{height}};
+            var modelPath = '{{modelUrl}}';
+            var scene    = new THREE.Scene(); // シーン作成
+
+            var geometry = new THREE.BoxGeometry(100, 100, 100); // 立方体作成
+            var material = new THREE.MeshPhongMaterial({color: 0x0000aa}); // 材質作成
+            var mesh     = new THREE.Mesh(geometry, material); // 立方体と材質を結びつけてメッシュ作成
+            
+            mesh.castShadow = true;
+            mesh.receiveShadow = true;
+            mesh.rotation.x=(Math.PI / 2) * 0.3;
+            
+            var texture = new THREE.Texture();
+            
+            var onProgress = function ( xhr ) {
+            };
+        
+            var onError = function ( xhr ) {
+                alert('error happen.');
+            };
+        
+            // model
+            var manager = new THREE.LoadingManager();
+            manager.onProgress = function ( item, loaded, total ) {
+            };
+
+            var male=null;
+            var loader = new THREE.OBJLoader( manager );
+            loader.load( modelPath, function ( object ) {
+
+                scene.add( object );
+                                
+                male = object;
+                                
+            }, onProgress, onError );
+            
+            var camera   = new THREE.PerspectiveCamera(40, width / height, 1, 1000); // カメラ作成。画角40、距離1〜1000の部分を表示できる。
+            camera.position.z = -400; // カメラの位置はz軸の-400
+            camera.lookAt(mesh.position); // メッシュの位置にカメラを向ける。
+            
+//            scene.add(mesh); // シーンにメッシュ追加
+            
+            var renderer = new THREE.WebGLRenderer(); // レンダラ作成
+            renderer.setSize(width, height);
+            
+            initLight();
+
+            window.onload = function(){
+                document.getElementById('canvas-wrapper').appendChild(renderer.domElement);
+                //renderer.render(scene, camera); // sceneをcameraで映す（表示）
+                loop();
+
+            }
+        
+        function setRotation(x,y) {
+            male.rotation.x = (Math.PI ) * x;
+            male.rotation.y = (Math.PI ) * y;
+            // alert(r);
+        }
+        function addRotation(x,y) {
+            male.rotation.x += (Math.PI ) * x * -1;
+            male.rotation.y += (Math.PI ) * y;
+            // alert(r);
+        }
+        function setZoom(z) {
+            if (z == 0) {
+                return;
+            }
+            camera.position.z = 1 / z * -400;
+        }
+        function setXY(x,y) {
+            male.position.x = x;
+            male.position.y = y;
+        }
+        function move(xx,yy) {
+            male.position.x += xx;
+            male.position.y += yy;
+        }
+        function loop(){
+            //クリアーカラーで初期化
+            renderer.clear();
+            //レンダリング（必須）
+            renderer.render(scene, camera);
+            //OrbitControls.jsを使用した場合は、こちらが必要
+            //controls.update();
+            //requestAnimationFrame
+            window.requestAnimationFrame(loop);
+        }
+        
+        var light, light2; //グローバル変数の宣言
+        function initLight() {
+            //平行光源オブジェクト(light)の設定
+            light = new THREE.DirectionalLight(0xcccccc,1.6);
+            //平行光源オブジェクト(light)の位置
+            light.position = new THREE.Vector3(0.577, 0.577, 0.577);
+            //影をつける
+            light.castShadow = true;
+            //sceneに平行光源オブジェクト(light)を追加
+            scene.add(light);
+            
+            //環境光オブジェクト(light2)の設定
+            light2 = new THREE.AmbientLight(0x333333);
+            //sceneに環境光オブジェクト(light2)を追加
+            scene.add(light2);                                      
+        }
+        
+        
+        </script>
+    </head>
+    <body>
+        <div id="canvas-wrapper"></div>
+    </body>
+</html>

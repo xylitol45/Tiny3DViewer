@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07051B711AB0ABAC001F4C29 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07051B701AB0ABAC001F4C29 /* TopViewController.swift */; };
+		072B9E171AC1BA99001B8C96 /* info.html in Resources */ = {isa = PBXBuildFile; fileRef = 072B9E161AC1BA99001B8C96 /* info.html */; };
+		0740E48F1AB0A481000F7872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0740E48E1AB0A481000F7872 /* AppDelegate.swift */; };
+		0740E4911AB0A481000F7872 /* ThreeDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0740E4901AB0A481000F7872 /* ThreeDViewController.swift */; };
+		0740E4941AB0A481000F7872 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0740E4921AB0A481000F7872 /* Main.storyboard */; };
+		0740E4961AB0A481000F7872 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0740E4951AB0A481000F7872 /* Images.xcassets */; };
+		0740E4991AB0A481000F7872 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0740E4971AB0A481000F7872 /* LaunchScreen.xib */; };
+		0740E4A51AB0A481000F7872 /* Tiny3DViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0740E4A41AB0A481000F7872 /* Tiny3DViewerTests.swift */; };
+		0740E4C01AB0A4CC000F7872 /* obj.html in Resources */ = {isa = PBXBuildFile; fileRef = 0740E4B01AB0A4CC000F7872 /* obj.html */; };
+		0740E4C81AB0A4CC000F7872 /* ColladaLoader.js in Resources */ = {isa = PBXBuildFile; fileRef = 0740E4B81AB0A4CC000F7872 /* ColladaLoader.js */; };
+		0740E4C91AB0A4CC000F7872 /* Detector.js in Resources */ = {isa = PBXBuildFile; fileRef = 0740E4B91AB0A4CC000F7872 /* Detector.js */; };
+		0740E4CA1AB0A4CC000F7872 /* OBJLoader.js in Resources */ = {isa = PBXBuildFile; fileRef = 0740E4BA1AB0A4CC000F7872 /* OBJLoader.js */; };
+		0740E4CB1AB0A4CC000F7872 /* stats.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 0740E4BB1AB0A4CC000F7872 /* stats.min.js */; };
+		0740E4CC1AB0A4CC000F7872 /* three.js in Resources */ = {isa = PBXBuildFile; fileRef = 0740E4BC1AB0A4CC000F7872 /* three.js */; };
+		0740E4CD1AB0A4CC000F7872 /* three.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 0740E4BD1AB0A4CC000F7872 /* three.min.js */; };
+		0740E4CE1AB0A4CC000F7872 /* tween.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 0740E4BE1AB0A4CC000F7872 /* tween.min.js */; };
+		0762BC8C1AB7559D005A8265 /* MyNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0762BC8B1AB7559D005A8265 /* MyNavigationViewController.swift */; };
+		07D0CADF1AB9C08B00AE9195 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D0CADA1AB9C08B00AE9195 /* SVIndefiniteAnimatedView.m */; };
+		07D0CAE01AB9C08B00AE9195 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 07D0CADC1AB9C08B00AE9195 /* SVProgressHUD.bundle */; };
+		07D0CAE11AB9C08B00AE9195 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D0CADE1AB9C08B00AE9195 /* SVProgressHUD.m */; };
+		269134271AB82C1E00364617 /* ModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269134261AB82C1E00364617 /* ModelItem.swift */; };
+		26C5D68B1ABFC2A500594540 /* dae.html in Resources */ = {isa = PBXBuildFile; fileRef = 26C5D68A1ABFC2A500594540 /* dae.html */; };
+		26D3B2E31AC002E10017670B /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B2E21AC002E10017670B /* InfoViewController.swift */; };
+		26E1E52B1AB181CC005E9280 /* CommonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E1E52A1AB181CC005E9280 /* CommonUtil.swift */; };
+		26E1E52D1AB1A3D3005E9280 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E1E52C1AB1A3D3005E9280 /* EditViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0740E49F1AB0A481000F7872 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0740E4811AB0A481000F7872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0740E4881AB0A481000F7872;
+			remoteInfo = Tiny3DViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07051B701AB0ABAC001F4C29 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		072B9E161AC1BA99001B8C96 /* info.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = info.html; sourceTree = "<group>"; };
+		0740E4891AB0A481000F7872 /* Tiny3DViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiny3DViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0740E48D1AB0A481000F7872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0740E48E1AB0A481000F7872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0740E4901AB0A481000F7872 /* ThreeDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDViewController.swift; sourceTree = "<group>"; };
+		0740E4931AB0A481000F7872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0740E4951AB0A481000F7872 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0740E4981AB0A481000F7872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0740E49E1AB0A481000F7872 /* Tiny3DViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tiny3DViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0740E4A31AB0A481000F7872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0740E4A41AB0A481000F7872 /* Tiny3DViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tiny3DViewerTests.swift; sourceTree = "<group>"; };
+		0740E4B01AB0A4CC000F7872 /* obj.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = obj.html; sourceTree = "<group>"; };
+		0740E4B81AB0A4CC000F7872 /* ColladaLoader.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ColladaLoader.js; sourceTree = "<group>"; };
+		0740E4B91AB0A4CC000F7872 /* Detector.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Detector.js; sourceTree = "<group>"; };
+		0740E4BA1AB0A4CC000F7872 /* OBJLoader.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = OBJLoader.js; sourceTree = "<group>"; };
+		0740E4BB1AB0A4CC000F7872 /* stats.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = stats.min.js; sourceTree = "<group>"; };
+		0740E4BC1AB0A4CC000F7872 /* three.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = three.js; sourceTree = "<group>"; };
+		0740E4BD1AB0A4CC000F7872 /* three.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = three.min.js; sourceTree = "<group>"; };
+		0740E4BE1AB0A4CC000F7872 /* tween.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tween.min.js; sourceTree = "<group>"; };
+		0762BC8B1AB7559D005A8265 /* MyNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationViewController.swift; sourceTree = "<group>"; };
+		07D0CAD91AB9C08B00AE9195 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		07D0CADA1AB9C08B00AE9195 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		07D0CADB1AB9C08B00AE9195 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		07D0CADC1AB9C08B00AE9195 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		07D0CADD1AB9C08B00AE9195 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		07D0CADE1AB9C08B00AE9195 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		07D0CAE21AB9C09E00AE9195 /* SwiftBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftBridgingHeader.h; sourceTree = "<group>"; };
+		269134261AB82C1E00364617 /* ModelItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelItem.swift; sourceTree = "<group>"; };
+		26C5D68A1ABFC2A500594540 /* dae.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = dae.html; sourceTree = "<group>"; };
+		26D3B2E21AC002E10017670B /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		26E1E52A1AB181CC005E9280 /* CommonUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtil.swift; sourceTree = "<group>"; };
+		26E1E52C1AB1A3D3005E9280 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0740E4861AB0A481000F7872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0740E49B1AB0A481000F7872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0740E4801AB0A481000F7872 = {
+			isa = PBXGroup;
+			children = (
+				0740E48B1AB0A481000F7872 /* Tiny3DViewer */,
+				0740E4A11AB0A481000F7872 /* Tiny3DViewerTests */,
+				0740E48A1AB0A481000F7872 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0740E48A1AB0A481000F7872 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0740E4891AB0A481000F7872 /* Tiny3DViewer.app */,
+				0740E49E1AB0A481000F7872 /* Tiny3DViewerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0740E48B1AB0A481000F7872 /* Tiny3DViewer */ = {
+			isa = PBXGroup;
+			children = (
+				0740E4AE1AB0A4A1000F7872 /* Resources */,
+				0740E48E1AB0A481000F7872 /* AppDelegate.swift */,
+				0740E4901AB0A481000F7872 /* ThreeDViewController.swift */,
+				07051B701AB0ABAC001F4C29 /* TopViewController.swift */,
+				26D3B2E21AC002E10017670B /* InfoViewController.swift */,
+				26E1E52C1AB1A3D3005E9280 /* EditViewController.swift */,
+				26E1E52A1AB181CC005E9280 /* CommonUtil.swift */,
+				0762BC8B1AB7559D005A8265 /* MyNavigationViewController.swift */,
+				269134261AB82C1E00364617 /* ModelItem.swift */,
+				07D0CAE21AB9C09E00AE9195 /* SwiftBridgingHeader.h */,
+				0740E4951AB0A481000F7872 /* Images.xcassets */,
+				0740E4921AB0A481000F7872 /* Main.storyboard */,
+				0740E4971AB0A481000F7872 /* LaunchScreen.xib */,
+				0740E48C1AB0A481000F7872 /* Supporting Files */,
+				07D0CAD81AB9C08B00AE9195 /* SVProgressHUD */,
+			);
+			path = Tiny3DViewer;
+			sourceTree = "<group>";
+		};
+		0740E48C1AB0A481000F7872 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0740E48D1AB0A481000F7872 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0740E4A11AB0A481000F7872 /* Tiny3DViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				0740E4A41AB0A481000F7872 /* Tiny3DViewerTests.swift */,
+				0740E4A21AB0A481000F7872 /* Supporting Files */,
+			);
+			path = Tiny3DViewerTests;
+			sourceTree = "<group>";
+		};
+		0740E4A21AB0A481000F7872 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0740E4A31AB0A481000F7872 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0740E4AE1AB0A4A1000F7872 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				072B9E161AC1BA99001B8C96 /* info.html */,
+				0740E4B01AB0A4CC000F7872 /* obj.html */,
+				26C5D68A1ABFC2A500594540 /* dae.html */,
+				0740E4B81AB0A4CC000F7872 /* ColladaLoader.js */,
+				0740E4B91AB0A4CC000F7872 /* Detector.js */,
+				0740E4BA1AB0A4CC000F7872 /* OBJLoader.js */,
+				0740E4BB1AB0A4CC000F7872 /* stats.min.js */,
+				0740E4BC1AB0A4CC000F7872 /* three.js */,
+				0740E4BD1AB0A4CC000F7872 /* three.min.js */,
+				0740E4BE1AB0A4CC000F7872 /* tween.min.js */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		07D0CAD81AB9C08B00AE9195 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				07D0CAD91AB9C08B00AE9195 /* SVIndefiniteAnimatedView.h */,
+				07D0CADA1AB9C08B00AE9195 /* SVIndefiniteAnimatedView.m */,
+				07D0CADB1AB9C08B00AE9195 /* SVProgressHUD-Prefix.pch */,
+				07D0CADC1AB9C08B00AE9195 /* SVProgressHUD.bundle */,
+				07D0CADD1AB9C08B00AE9195 /* SVProgressHUD.h */,
+				07D0CADE1AB9C08B00AE9195 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0740E4881AB0A481000F7872 /* Tiny3DViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0740E4A81AB0A481000F7872 /* Build configuration list for PBXNativeTarget "Tiny3DViewer" */;
+			buildPhases = (
+				0740E4851AB0A481000F7872 /* Sources */,
+				0740E4861AB0A481000F7872 /* Frameworks */,
+				0740E4871AB0A481000F7872 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tiny3DViewer;
+			productName = Tiny3DViewer;
+			productReference = 0740E4891AB0A481000F7872 /* Tiny3DViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0740E49D1AB0A481000F7872 /* Tiny3DViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0740E4AB1AB0A481000F7872 /* Build configuration list for PBXNativeTarget "Tiny3DViewerTests" */;
+			buildPhases = (
+				0740E49A1AB0A481000F7872 /* Sources */,
+				0740E49B1AB0A481000F7872 /* Frameworks */,
+				0740E49C1AB0A481000F7872 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0740E4A01AB0A481000F7872 /* PBXTargetDependency */,
+			);
+			name = Tiny3DViewerTests;
+			productName = Tiny3DViewerTests;
+			productReference = 0740E49E1AB0A481000F7872 /* Tiny3DViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0740E4811AB0A481000F7872 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = yoshimura;
+				TargetAttributes = {
+					0740E4881AB0A481000F7872 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 23HGCW7W89;
+					};
+					0740E49D1AB0A481000F7872 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 0740E4881AB0A481000F7872;
+					};
+				};
+			};
+			buildConfigurationList = 0740E4841AB0A481000F7872 /* Build configuration list for PBXProject "Tiny3DViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0740E4801AB0A481000F7872;
+			productRefGroup = 0740E48A1AB0A481000F7872 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0740E4881AB0A481000F7872 /* Tiny3DViewer */,
+				0740E49D1AB0A481000F7872 /* Tiny3DViewerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0740E4871AB0A481000F7872 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0740E4CE1AB0A4CC000F7872 /* tween.min.js in Resources */,
+				07D0CAE01AB9C08B00AE9195 /* SVProgressHUD.bundle in Resources */,
+				0740E4C81AB0A4CC000F7872 /* ColladaLoader.js in Resources */,
+				072B9E171AC1BA99001B8C96 /* info.html in Resources */,
+				0740E4CC1AB0A4CC000F7872 /* three.js in Resources */,
+				0740E4941AB0A481000F7872 /* Main.storyboard in Resources */,
+				0740E4991AB0A481000F7872 /* LaunchScreen.xib in Resources */,
+				0740E4C01AB0A4CC000F7872 /* obj.html in Resources */,
+				0740E4CB1AB0A4CC000F7872 /* stats.min.js in Resources */,
+				0740E4961AB0A481000F7872 /* Images.xcassets in Resources */,
+				0740E4C91AB0A4CC000F7872 /* Detector.js in Resources */,
+				26C5D68B1ABFC2A500594540 /* dae.html in Resources */,
+				0740E4CA1AB0A4CC000F7872 /* OBJLoader.js in Resources */,
+				0740E4CD1AB0A4CC000F7872 /* three.min.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0740E49C1AB0A481000F7872 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0740E4851AB0A481000F7872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269134271AB82C1E00364617 /* ModelItem.swift in Sources */,
+				26E1E52D1AB1A3D3005E9280 /* EditViewController.swift in Sources */,
+				07051B711AB0ABAC001F4C29 /* TopViewController.swift in Sources */,
+				07D0CADF1AB9C08B00AE9195 /* SVIndefiniteAnimatedView.m in Sources */,
+				26D3B2E31AC002E10017670B /* InfoViewController.swift in Sources */,
+				0740E4911AB0A481000F7872 /* ThreeDViewController.swift in Sources */,
+				07D0CAE11AB9C08B00AE9195 /* SVProgressHUD.m in Sources */,
+				26E1E52B1AB181CC005E9280 /* CommonUtil.swift in Sources */,
+				0762BC8C1AB7559D005A8265 /* MyNavigationViewController.swift in Sources */,
+				0740E48F1AB0A481000F7872 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0740E49A1AB0A481000F7872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0740E4A51AB0A481000F7872 /* Tiny3DViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0740E4A01AB0A481000F7872 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0740E4881AB0A481000F7872 /* Tiny3DViewer */;
+			targetProxy = 0740E49F1AB0A481000F7872 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0740E4921AB0A481000F7872 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0740E4931AB0A481000F7872 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0740E4971AB0A481000F7872 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0740E4981AB0A481000F7872 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0740E4A61AB0A481000F7872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = Tiny3DViewer/SwiftBridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0740E4A71AB0A481000F7872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = Tiny3DViewer/SwiftBridgingHeader.h;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0740E4A91AB0A481000F7872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Tiny3DViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		0740E4AA1AB0A481000F7872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Tiny3DViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		0740E4AC1AB0A481000F7872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tiny3DViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tiny3DViewer.app/Tiny3DViewer";
+			};
+			name = Debug;
+		};
+		0740E4AD1AB0A481000F7872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tiny3DViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tiny3DViewer.app/Tiny3DViewer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0740E4841AB0A481000F7872 /* Build configuration list for PBXProject "Tiny3DViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0740E4A61AB0A481000F7872 /* Debug */,
+				0740E4A71AB0A481000F7872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0740E4A81AB0A481000F7872 /* Build configuration list for PBXNativeTarget "Tiny3DViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0740E4A91AB0A481000F7872 /* Debug */,
+				0740E4AA1AB0A481000F7872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0740E4AB1AB0A481000F7872 /* Build configuration list for PBXNativeTarget "Tiny3DViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0740E4AC1AB0A481000F7872 /* Debug */,
+				0740E4AD1AB0A481000F7872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0740E4811AB0A481000F7872 /* Project object */;
+}
